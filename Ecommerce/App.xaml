@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:Ecommerce"
              StartupUri="\Domain\Views\MainWindow.xaml">
     <Application.Resources>
-         
+            <Style TargetType="{x:Type GridViewColumnHeader}">
+                <!-- Set any properties you want to set -->
+                <Setter Property="Background" Value="Orange" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="FontSize" Value="25" />
+                <Setter Property="FontWeight" Value="ExtraBlack" />
+            </Style>
     </Application.Resources>
 </Application>

@@ -1,6 +1,4 @@
-﻿using Ecommerce.DataAccess.SqlServer;
-using Ecommerce.Domain.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,23 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Ecommerce
+namespace Ecommerce.Domain.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Product_Window.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ProductWindow : Window
     {
-        public MainWindow()
+        public ProductWindow()
         {
             InitializeComponent();
-                
-            var productRepo = new ProductRepository();
-            var vm = new MainViewModel(productRepo);
-            this.DataContext = vm;
         }
     }
 }
